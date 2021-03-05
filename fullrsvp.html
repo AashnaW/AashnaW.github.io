@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <title> RSVP Form </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/rsvp.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script src="js/form.js"> </script>
+</head>
+
+<body>
+    <div class="top">
+    </div>
+    <div class="form">
+        <div class="info">
+            <h1>RSVP</h1>
+            <h2>for the wedding of</h2>
+            <h1>Aastha & Neil</h1>
+            <p class="line">________________________________________</p>
+            <h2>The Details</h2>
+            <p>Friday, October 29th, 2020</p>
+            <p>5:00 PM</p>
+            <br>
+            <h2>Ceremony & Reception</h2>
+            <p>Legacy Castle, NJ</p>
+            <p class="line">________________________________________</p>
+
+            <input type="text" id="full_name" name="full_name" placeholder="Name">
+            <!-- <input type="number" placeholder="# of Guests"> -->
+
+            <input type="text" id ="song" name="song" placeholder="A song">
+
+            <input type="radio" id="food_choice" name="food_choice" value="non-vegetarian" />non-vegetarian <br/>
+            <input type="radio" id="food_choice" name="food_choice" value="vegetarian" />vegetarian<br/>
+
+            <input type="checkbox" id="mehndi" name="events" value="mehndi" onchange="toggleCheckbox(this)">
+            <label for="mehndi"> Mehndi/ Sangeet</label><br>
+            <input type="checkbox" id="ceremony" name="events" value="ceremony" onchange="toggleCheckbox(this)">
+            <label for="ceremony"> Ceremony/ Reception</label><br>
+        </div>
+        <button class="accept" onclick="SubForm()">Accept</button>
+        <button class="regret" onclick="Regret()">Regret</button>
+    </div>
+</body>
+
+</html>
